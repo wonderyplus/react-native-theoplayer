@@ -91,12 +91,12 @@ export default function App() {
     console.log('THEOplayer is ready');
   };
 
-  const needsBorder = Platform.OS === 'ios';
+  const needsBorder = true;
   const PLAYER_CONTAINER_STYLE: ViewStyle = {
     position: 'absolute',
     top: needsBorder ? getStatusBarHeight() : 0,
     left: needsBorder ? 2 : 0,
-    bottom: 0,
+    bottom: 100,
     right: needsBorder ? 2 : 0,
     alignItems: 'center',
     justifyContent: 'center',
