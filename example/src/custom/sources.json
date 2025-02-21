@@ -1,5 +1,73 @@
 [
   {
+    "name": "Custom 2",
+    "os": ["android"],
+    "source": {
+      "sources": [
+        {
+          "type": "audio/mpeg",
+          "src": "https://rss.art19.com/episodes/2cb080af-74b8-44b0-b147-9b07deba3955.mp3?rss_browser=BAhJIhRXb25kZXJ5IENyYXdsZXIGOgZFVA%3D%3D--03d2483288c09bef9456944fb7659b055b344cb2",
+          "headers": {}
+        }
+      ],
+      "poster": "https://res.cloudinary.com/dumslp4el/image/fetch/w_1200,h_1200/https://content.production.cdn.art19.com/images/21/35/4d/50/21354d50-a582-4a07-badb-7562b7b8ba9a/afba656cd276f886053440fab30746a3d3ff991fd6851c2ec5117d9cb68cd6f46ac55dd5b14e853cc3a36b998cd42c4a0abe87b5ed6e98b2bdca188df60f2448.jpeg",
+      "metadata": {
+        "title": "02/10/25: Green beats Red in Sunday's big game",
+        "subtitle": "Men in Blazers: Early Kick Off",
+        "artist": "Men in Blazers: Early Kick Off",
+        "album": "Feb 10, 2025",
+        "displayIconUri": "https://res.cloudinary.com/dumslp4el/image/fetch/w_1200,h_1200/https://content.production.cdn.art19.com/images/21/35/4d/50/21354d50-a582-4a07-badb-7562b7b8ba9a/afba656cd276f886053440fab30746a3d3ff991fd6851c2ec5117d9cb68cd6f46ac55dd5b14e853cc3a36b998cd42c4a0abe87b5ed6e98b2bdca188df60f2448.jpeg",
+
+        "customData": {
+          "authSession": {
+            "tokens": [
+              {
+                "refresh": "eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAifQ.CSsULIu9jaxpLpinxGlJzW0lJ0w5ExwYvzggx_N5kDM4yExo8DOQy4sb5CU8zqwQ2TV1N6kL4e0LYDeUy7dBzP6KBTmlxpY6L_ZfRVxCXExyj4gH3UhwjR4M-t8DKTDVQZQc1i3LEKQMP3BNp_daK4A38ZmZrKk7gaBkJbwHU1-dSg2Hmd-d2vruzS6ZoV68qMNYiY4duIZpT1MVufYftPTw3L_z7jQTIE_RUycFvJTsWrLnl2yopE8bnUhZU3D6nSvyoINMb5UMUfs3oIky0bhmYise3LPw7fV59AtTeaQKsxR2GE0nFEB8bIG1Jgyg5DViW0CMKC4lJ7Vx_sDmJQ.PKXTF1Jh17h7Hw3p.n8hNmxnP70x2LwQA0z0YC0d_mIkZOC_FQYKk5xkJKpBQN4N-aErQbE8_6gvTmq0fB0A_luJBFFDLPoH5JCjefThIPa_w8ywLEJa8WWy2t9KnGoZtXzP3IsYWtARFWmK0GTtTiX-b79zVDMm4dq0T8uvYbfJqOefiXn4i0nqp_QADgA4zjqceLzoKJGj7NBloEZavbiSnLtp28DHTRL5rRw6_wA3surMLrzH1KOEMK7djLKZlg9X8hyUbM66dGD9wAOO-baknpQMF0kNP8Wcf6ForR9R6Ec4Bd6sLw3NDX1a6eT4kIAfdVh4CB8omd0qqudb0FLgMGYg7LlmsGQzO0LI2bh4Rq7K8_VOgDtPQOTpU_RGRVDFtQQvQTn30CEF_G7iZhBYFStX3eR5JhO9nbFviap2i2TMthnumlcFQNLrbkIyh5r-6G6dVJoKpSUb1FADpVHhmhoYHhgh7cz2SiHZdRILO_vLPAv4I4fU_Jc4Yo2tTABrcCFlV5fknhKu4TtJZr-YIIEpXEIA0kERCx3tr35LhiRy8EOUWzAyMGCKWvTWiw5DPxdlX5eAA_zFhdFeyprteiWLpbrZlcVCs70LVe9ZTPsikOzRT4GsUepH0qdjjpTCjPHOEJxgSsfmtgtzrUe45l9rEOleO-bU3sHF1LSSbYDOtMhCjIQc5nXm2Ss1Wmlws6M4tGxlHcCBVR3Ir2kLQ7LsHal-yXE3Ql7vj-ufgSMZ14kZwVVR54jS2Rmw3gt8yB_TXLC6GxjpgTqnZqPPLE3Uuej2lA3Nr5VvAGCE5aJXLvQRLjkTLlbBJS314UW0bHI-Ih0EVZ3GNk2FmPDGX2qIyv0YtJXDXw4y0ev9CabdFHJ6qZ7DXGUFvAaqlDYG503HQdL-d3sSovCs2UVROetkIqqaVHVw2yIqy49X4Hq5ovlxmiHZFO9nIRsykO3XD6z8uJYd8OHkbhIiqaUH9R7cuVRSBxyvSLdJn5Khy45qqV0V7kX5lSCMsuNWrfFMIBTYYZVtZwX8w0I8SDuw4BU8VYUqTsp1kjuLQ_NM7UsFbE2sddCdk3ddkWiQeR8WWQguPKmI4bcakkWlSkOcDrfh1uWK7oe3n_XIhqUc3f0iw_tmGNSffnHvQnMcwYo09wQIR7G9dqmAzWTdNg2SB-q-klsvqJQT7MClRU99wmrgmExZDmB9dOaL4I1lYf4bVvn371ybvOKxnMYfKRoSEz8ezWeN7cptEvY-omuGBEkQ90fXgVNfiE_xEVa6JdgFpmua37LA7xacUykOhKJTiaCvtqAaRt8O9GP42XLFwz7U_vfqWjIxjCjrHlCcC2AUaRi9bC98.gXC8ZmZ_pXaYHMUl5iER0A",
+                "access": "eyJraWQiOiJGdFNrWXZxTzJaQURoa0VqazZ5WTRvU2cxZytRYkFwNW9TZzdJbmtpMERNPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJiMjE4YjIyNy02NGNlLTQzY2YtYTkwOS1mOGEzNDFiZjMwMDMiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtd2VzdC0yLmFtYXpvbmF3cy5jb21cL3VzLXdlc3QtMl9jSlR5aG9HMjMiLCJjbGllbnRfaWQiOiI1Mm5zaDlzMXRybHVqaGs0c3JqdGIzODg4YSIsIm9yaWdpbl9qdGkiOiJmMmVhYWYzYi1iMWM1LTRhYjUtYWRmZC1iYjc3M2ExOGJmYWEiLCJldmVudF9pZCI6IjgzMjc1M2QzLTBhNTgtNGE1MC05OGJkLTNkYzg3NWQyMzkyMyIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE3MzkyMTIxMDYsImV4cCI6MTczOTIyNzcwOCwiaWF0IjoxNzM5MjI0MTA4LCJqdGkiOiJiMGM5NWMzYi02N2QzLTQwZDItOGZmNy1iNGM1ZGMxNzE0Y2IiLCJ1c2VybmFtZSI6ImIyMThiMjI3LTY0Y2UtNDNjZi1hOTA5LWY4YTM0MWJmMzAwMyJ9.Jw3a2LdE0nfZLOcJFMeh3P27VEyrYCJlZgB1IZPhIFecWdihsHtZPXKoYranDqBqTsaPIpMUZEOsk0cuEQM8MiqokuicOs7z2x1D7mM4OgbENhuT446o9ibjBu1iVGgZBsXfA5aPYC--OEtoi8ZWT7oEpOgAv6KFan1933agNDMD0vnMWOmHY21iYi-NgPkg1z8qnFtidxWPXrEieRDgf2nnzpdlJemFWXtUklKPjpNk5T9Sb4cEyWyONYufYIgNRSMcKMV_VydHj0Mrz493aJ2wYJgGiNTEzDMlcFONW3a9rlMoBsTNR3ACHmYi9m4pQaicaHZ7sZFpGs_Ns5ZLng",
+                "integrationKey": "wondery"
+              }
+            ],
+            "customerId": "b218b227-64ce-43cf-a909-f8a341bf3003",
+            "userId": "b218b227-64ce-43cf-a909-f8a341bf3003"
+          },
+          "id": "13997-02/10/25:-green-beats-red-in-sundays-big-game",
+          "authorize": false,
+          "seriesId": "13997",
+          "seasonId": "0",
+          "audioType": "stereo",
+          "spatialAudio": false,
+          "seasonTitle": "",
+          "episode": 383,
+          "seriesTitle": "Men in Blazers: Early Kick Off",
+          "genres": ["All", "Featured", "Sports"]
+        }
+      },
+      "id": "13997-02/10/25:-green-beats-red-in-sundays-big-game",
+      "url": "https://rss.art19.com/episodes/2cb080af-74b8-44b0-b147-9b07deba3955.mp3?rss_browser=BAhJIhRXb25kZXJ5IENyYXdsZXIGOgZFVA%3D%3D--03d2483288c09bef9456944fb7659b055b344cb2"
+    }
+  },
+  {
+    "name": "custom 1",
+    "os": ["android", "web"],
+    "source": {
+      "sources": [
+        {
+          "src": "https://rss.art19.com/episodes/user/6r4od8XR3hjtaTl_anZlxyt_8Je8acLT/6d4006d0-ceb2-42f9-957d-9a10ff2b55b9.mp3?rss_browser=BAhJIhRXb25kZXJ5IENyYXdsZXIGOgZFVA%3D%3D--03d2483288c09bef9456944fb7659b055b344cb2",
+          "type": "audio/mpeg"
+        }
+      ],
+      "poster": "https://res.cloudinary.com/dumslp4el/image/fetch/w_1200,h_1200/https://content.production.cdn.art19.com/images/04/20/4a/1a/04204a1a-3b1a-4339-b419-fdaedbd18bbf/a721687e196b63736885d8b858a138820369695bc40b3ce88a7b7b9b7cc2ce9fcc0586dbb307ddd8295ebf80ed9daee451f571194022cd6184454e70641797b1.jpeg",
+      "metadata": {
+        "title": "Title Custom 1",
+        "subtitle": "Subtitle Custom 1",
+        "album": "React-Native THEOplayer demos",
+        "mediaUri": "https://theoplayer.com",
+        "displayIconUri": "https://res.cloudinary.com/dumslp4el/image/fetch/w_1200,h_1200/https://content.production.cdn.art19.com/images/04/20/4a/1a/04204a1a-3b1a-4339-b419-fdaedbd18bbf/a721687e196b63736885d8b858a138820369695bc40b3ce88a7b7b9b7cc2ce9fcc0586dbb307ddd8295ebf80ed9daee451f571194022cd6184454e70641797b1.jpeg",
+        "artist": "THEOplayer"
+      }
+    }
+  },
+  {
     "name": "DASH - Thumbnails in manifest",
     "os": ["android", "web"],
     "source": {
@@ -161,9 +229,7 @@
   },
   {
     "name": "THEOlive test",
-    "os": [
-      "web", "ios", "android"
-    ],
+    "os": ["web", "ios", "android"],
     "source": {
       "sources": [
         {
@@ -383,10 +449,7 @@
   },
   {
     "name": "HLS - SSAI - Google DAI - LIVE",
-    "os": [
-      "ios",
-      "web"
-    ],
+    "os": ["ios", "web"],
     "source": {
       "sources": {
         "ssai": {
