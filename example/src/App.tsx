@@ -1,5 +1,3 @@
-import * as React from 'react';
-import { useState } from 'react';
 import {
   AirplayButton,
   CastMessage,
@@ -22,23 +20,28 @@ import {
   TimeLabel,
   UiContainer,
 } from '@theoplayer/react-native-ui';
-import { PlayerConfiguration, PlayerEventType, THEOplayer, THEOplayerView, sdkVersions } from 'react-native-theoplayer';
+import * as React from 'react';
+import { useState } from 'react';
+import env from 'react-native-config';
+import { PlayerConfiguration, PlayerEventType, sdkVersions, THEOplayer, THEOplayerView } from 'react-native-theoplayer';
 
 import { Platform, SafeAreaView, StyleSheet, View, ViewStyle } from 'react-native';
 import { getStatusBarHeight } from 'react-native-status-bar-height';
-import { SourceMenuButton, SOURCES } from './custom/SourceMenuButton';
+import { AutoPlaySubMenu } from './custom/AutoPlaySubMenu';
 import { BackgroundAudioSubMenu } from './custom/BackgroundAudioSubMenu';
-import { PiPSubMenu } from './custom/PipSubMenu';
 import { MediaCacheDownloadButton } from './custom/MediaCacheDownloadButton';
 import { MediaCacheMenuButton } from './custom/MediaCacheMenuButton';
 import { MediaCachingTaskListSubMenu } from './custom/MediaCachingTaskListSubMenu';
+import { PiPSubMenu } from './custom/PipSubMenu';
 import { RenderingTargetSubMenu } from './custom/RenderingTargetSubMenu';
-import { AutoPlaySubMenu } from './custom/AutoPlaySubMenu';
+import { SourceMenuButton, SOURCES } from './custom/SourceMenuButton';
+
+const { THEOPLAYER_KEY } = env;
 
 const playerConfig: PlayerConfiguration = {
   // Get your THEOplayer license from https://portal.theoplayer.com/
   // Without a license, only demo sources hosted on '*.theoplayer.com' domains can be played.
-  license: undefined,
+  license: THEOPLAYER_KEY,
   hlsDateRange: true,
   libraryLocation: 'theoplayer',
   cast: {
@@ -88,12 +91,12 @@ export default function App() {
     console.log('THEOplayer is ready');
   };
 
-  const needsBorder = Platform.OS === 'ios';
+  const needsBorder = true;
   const PLAYER_CONTAINER_STYLE: ViewStyle = {
     position: 'absolute',
     top: needsBorder ? getStatusBarHeight() : 0,
     left: needsBorder ? 2 : 0,
-    bottom: 0,
+    bottom: 100,
     right: needsBorder ? 2 : 0,
     alignItems: 'center',
     justifyContent: 'center',

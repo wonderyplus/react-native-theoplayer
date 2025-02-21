@@ -1,7 +1,6 @@
 PODS:
   - boost (1.84.0)
   - DoubleConversion (1.1.6)
-  - DSFRegex (3.3.1)
   - FBLazyVector (0.76.5-0)
   - fmt (9.1.0)
   - glog (0.3.5)
@@ -1678,10 +1677,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - DSFRegex
     - google-cast-sdk-dynamic-xcframework
-    - GoogleAds-IMA-iOS-SDK
-    - GoogleAds-IMA-tvOS-SDK
     - PromisesObjC
     - SocketRocket
     - Swifter
@@ -1692,7 +1688,6 @@ SPEC REPOS:
     - THEOplayer-Integration-GoogleIMA
     - THEOplayer-Integration-THEOlive
     - THEOplayerSDK-core
-    - TinyCSV
 
 EXTERNAL SOURCES:
   boost:
@@ -1920,4 +1915,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 906e279388e7a9d2ca2109b2c8d15bbb6387a632
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.12.1
