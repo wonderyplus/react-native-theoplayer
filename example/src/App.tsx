@@ -23,6 +23,7 @@ import {
   UiContainer,
 } from '@theoplayer/react-native-ui';
 import { PlayerConfiguration, PlayerEventType, THEOplayer, THEOplayerView } from 'react-native-theoplayer';
+import env from 'react-native-config';
 
 import { Platform, SafeAreaView, StyleSheet, View, ViewStyle } from 'react-native';
 import { getStatusBarHeight } from 'react-native-status-bar-height';
@@ -34,10 +35,12 @@ import { MediaCacheMenuButton } from './custom/MediaCacheMenuButton';
 import { MediaCachingTaskListSubMenu } from './custom/MediaCachingTaskListSubMenu';
 import { RenderingTargetSubMenu } from './custom/RenderingTargetSubMenu';
 
+const { THEOPLAYER_KEY } = env;
+
 const playerConfig: PlayerConfiguration = {
   // Get your THEOplayer license from https://portal.theoplayer.com/
   // Without a license, only demo sources hosted on '*.theoplayer.com' domains can be played.
-  license: undefined,
+  license: THEOPLAYER_KEY,
   chromeless: true,
   hlsDateRange: true,
   libraryLocation: 'theoplayer',
