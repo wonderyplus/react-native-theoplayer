@@ -22,6 +22,7 @@
 		DC6595BC1C39D39B157BFA59 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 7740B1311B6C85C9C1C70CE2 /* PrivacyInfo.xcprivacy */; };
 		E62D1D2FC6918CE1E566CDB2 /* libPods-ReactNativeTHEOplayer-tvOS-ReactNativeTHEOplayer-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 634980404566E394A44918D6 /* libPods-ReactNativeTHEOplayer-tvOS-ReactNativeTHEOplayer-tvOSTests.a */; };
 		F9AE46DCC5DA5114E4A6107F /* libPods-ReactNativeTHEOplayer-ReactNativeTHEOplayerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 272FCE9124B550A065BEE3DA /* libPods-ReactNativeTHEOplayer-ReactNativeTHEOplayerTests.a */; };
+		724CB6AB5C79454BAD869C44 /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = F8F78E7E3B734B4F8DBD8AA6 /* Config.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		E13BF0204B80026411EC76D2 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = ReactNativeTHEOplayer/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		F8F78E7E3B734B4F8DBD8AA6 /* Config.xcconfig */ = {isa = PBXFileReference; name = "Config.xcconfig"; path = "Config.xcconfig"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = text.xcconfig; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				F8F78E7E3B734B4F8DBD8AA6 /* Config.xcconfig */,
 				13B07FAE1A68108700A75B9A /* ReactNativeTHEOplayer */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* ReactNativeTHEOplayerTests */,
@@ -357,6 +360,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				724CB6AB5C79454BAD869C44 /* Config.xcconfig in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				442BFC3895EC4E39B762450A /* PrivacyInfo.xcprivacy in Resources */,
@@ -1134,6 +1138,7 @@
 				USE_HERMES = true;
 			};
 			name = Debug;
+			baseConfigurationReference = F8F78E7E3B734B4F8DBD8AA6 /* Config.xcconfig */;
 		};
 		83CBBA211A601CBA00E9B192 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1196,6 +1201,7 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+			baseConfigurationReference = F8F78E7E3B734B4F8DBD8AA6 /* Config.xcconfig */;
 		};
 /* End XCBuildConfiguration section */
 
