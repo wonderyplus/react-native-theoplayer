@@ -1,0 +1,133 @@
+{
+  "lockfileVersion": 1,
+  "packages": {
+    "@babel/core": {
+      "version": "^7.25.9",
+      "integrated": false
+    },
+    "@babel/preset-env": {
+      "version": "^7.25.9",
+      "integrated": false
+    },
+    "@babel/runtime": {
+      "version": "^7.25.9",
+      "integrated": false
+    },
+    "@react-native-community/cli": {
+      "version": "15.0.1",
+      "integrated": false
+    },
+    "@react-native-community/cli-platform-android": {
+      "version": "15.0.1",
+      "integrated": false
+    },
+    "@react-native-community/cli-platform-ios": {
+      "version": "15.0.1",
+      "integrated": false
+    },
+    "@react-native/babel-preset": {
+      "version": "0.76.5",
+      "integrated": false
+    },
+    "@react-native/eslint-config": {
+      "version": "0.76.5",
+      "integrated": false
+    },
+    "@react-native/metro-config": {
+      "version": "0.76.5",
+      "integrated": false
+    },
+    "@react-native/typescript-config": {
+      "version": "0.76.5",
+      "integrated": false
+    },
+    "@theoplayer/react-native-ui": {
+      "version": "^0.10.0",
+      "integrated": false
+    },
+    "@types/react": {
+      "version": "^18.3.12",
+      "integrated": false
+    },
+    "@types/react-dom": {
+      "version": "^18.3.1",
+      "integrated": false
+    },
+    "babel-loader": {
+      "version": "^8.4.1",
+      "integrated": false
+    },
+    "babel-plugin-module-resolver": {
+      "version": "^5.0.2",
+      "integrated": false
+    },
+    "babel-plugin-react-native-web": {
+      "version": "^0.17.7",
+      "integrated": false
+    },
+    "copy-webpack-plugin": {
+      "version": "^12.0.2",
+      "integrated": false
+    },
+    "eslint": {
+      "version": "^8.57.1",
+      "integrated": false
+    },
+    "html-webpack-plugin": {
+      "version": "^5.6.3",
+      "integrated": false
+    },
+    "react": {
+      "version": "18.3.1",
+      "integrated": false
+    },
+    "react-dom": {
+      "version": "18.3.1",
+      "integrated": false
+    },
+    "react-native": {
+      "version": "npm:react-native-tvos@^0.76.5-0",
+      "integrated": false
+    },
+    "react-native-config": {
+      "version": "^1.5.5",
+      "integrated": true
+    },
+    "react-native-status-bar-height": {
+      "version": "^2.6.0",
+      "integrated": false
+    },
+    "react-native-svg": {
+      "version": "^15.8.0",
+      "integrated": false
+    },
+    "react-native-svg-web": {
+      "version": "^1.0.9",
+      "integrated": false
+    },
+    "react-native-web": {
+      "version": "^0.19.13",
+      "integrated": false
+    },
+    "react-native-web-image-loader": {
+      "version": "^0.1.1",
+      "integrated": false
+    },
+    "typescript": {
+      "version": "5.0.4",
+      "integrated": false
+    },
+    "webpack": {
+      "version": "^5.95.0",
+      "integrated": false
+    },
+    "webpack-cli": {
+      "version": "^5.1.4",
+      "integrated": false
+    },
+    "webpack-dev-server": {
+      "version": "^5.1.0",
+      "integrated": false
+    }
+  }
+}
