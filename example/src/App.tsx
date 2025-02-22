@@ -23,7 +23,15 @@ import {
 import * as React from 'react';
 import { useState } from 'react';
 import env from 'react-native-config';
-import { PlayerConfiguration, PlayerEventType, sdkVersions, THEOplayer, THEOplayerView } from 'react-native-theoplayer';
+import {
+  MediaTrackType,
+  PlayerConfiguration,
+  PlayerEventType,
+  sdkVersions,
+  THEOplayer,
+  THEOplayerView,
+  TrackListEventType,
+} from 'react-native-theoplayer';
 
 import { Platform, Pressable, SafeAreaView, StyleSheet, Text, View, ViewStyle } from 'react-native';
 import { getStatusBarHeight } from 'react-native-status-bar-height';
@@ -63,13 +71,53 @@ const playerConfig: PlayerConfiguration = {
   },
 };
 
+type Quality = {
+  bandwidth: number;
+  codecs: string;
+  frameRate: number;
+  height: number;
+  id: string;
+  name: string;
+  uid: number;
+  width: number;
+};
+
 /**
  * The example app demonstrates the use of the THEOplayerView with a custom UI using the provided UI components.
  * If you don't want to create a custom UI, you can just use the THEOplayerDefaultUi component instead.
  */
 export default function App() {
   const [player, setPlayer] = useState<THEOplayer | undefined>(undefined);
-  const [displayVideo, setDisplayVideo] = useState(true);
+  const [useLowBitrate, setUseLowBitrate] = useState(true);
+  const [lowestQuality, setLowestQuality] = useState<Quality | null>(null);
+
+  const onMediaTrackList = React.useCallback((e: any) => {
+    if (e?.subType === TrackListEventType.ADD_TRACK && e?.trackType === MediaTrackType.VIDEO) {
+      setLowestQuality(
+        e?.track.qualities.reduce((lowest: Quality, next: Quality) => {
+          if (lowest.bandwidth < next.bandwidth) {
+            return lowest;
+          }
+          return next;
+        }),
+      );
+    }
+  }, []);
+
+  React.useEffect(() => {
+    if (player?.abr && lowestQuality) {
+      if (useLowBitrate) {
+        // set low bitrate
+        console.debug('Setting quality to', { lowestQuality });
+        player.targetVideoQuality = lowestQuality.uid;
+      } else {
+        // set high bitrate
+        console.debug('Setting quality to max');
+        player.targetVideoQuality = undefined;
+      }
+    }
+  }, [useLowBitrate]);
+
   const onPlayerReady = (player: THEOplayer) => {
     setPlayer(player);
     // optional debug logs
@@ -83,6 +131,7 @@ export default function App() {
     player.addEventListener(PlayerEventType.SEEKING, console.log);
     player.addEventListener(PlayerEventType.SEEKED, console.log);
     player.addEventListener(PlayerEventType.ENDED, console.log);
+    player.addEventListener(PlayerEventType.MEDIA_TRACK_LIST, onMediaTrackList);
 
     sdkVersions().then((versions) => console.log(`[theoplayer] ${JSON.stringify(versions, null, 4)}`));
 
@@ -110,10 +159,10 @@ export default function App() {
     <SafeAreaView style={[StyleSheet.absoluteFill, { backgroundColor: '#000000' }]}>
       <Pressable
         style={{ position: 'absolute', top: 50, borderStyle: 'solid', borderColor: 'white', borderWidth: 1 }}
-        onPress={() => setDisplayVideo((disp) => !disp)}>
-        <Text style={{ color: 'white' }}>{displayVideo ? 'Hide video' : 'Show video'}</Text>
+        onPress={() => setUseLowBitrate((x) => !x)}>
+        <Text style={{ color: 'white' }}>{useLowBitrate ? 'Set high quality' : 'Set low quality'}</Text>
       </Pressable>
-      <View style={[PLAYER_CONTAINER_STYLE, !displayVideo && { display: 'none' }]}>
+      <View style={PLAYER_CONTAINER_STYLE}>
         <THEOplayerView config={playerConfig} onPlayerReady={onPlayerReady}>
           {player !== undefined && (
             <UiContainer
