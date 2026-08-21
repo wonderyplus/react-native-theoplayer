@@ -1,3 +1,4 @@
+# 📦 Repository Archived
 # wondery/react-native-theoplayer
 
 This repository is a fork of the react-native-theoplayer package, intended for use in testing and demoing THEOplayer-related issues.
